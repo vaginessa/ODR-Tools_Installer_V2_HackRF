@@ -150,8 +150,7 @@ libvlc-dev vlc-data \
 libfaad2 libfaad-dev \
 python-mako python-requests \
 supervisor \
-pulseaudio \ 
-gqrx-sdr gr-osmosdr hackrf \
+pulseaudio gqrx-sdr gr-osmosdr hackrf
 
 if [[ "$DISTRO" == "jessie" || "$DISTRO" == "stretch" ]] ; then
 

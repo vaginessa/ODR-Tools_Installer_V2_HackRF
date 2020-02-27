@@ -150,7 +150,8 @@ libvlc-dev vlc-data \
 libfaad2 libfaad-dev \
 python-mako python-requests \
 supervisor \
-pulseaudio \ gqrx-sdr gr-osmosdr hackrf \
+pulseaudio \ 
+gqrx-sdr gr-osmosdr hackrf \
 
 if [[ "$DISTRO" == "jessie" || "$DISTRO" == "stretch" ]] ; then
 
@@ -278,7 +279,7 @@ sudo ldconfig
 
 echo -e "$GREEN FIFO file for HackRF $NORMAL"
 # creating FIFO
-sudo /home/$USER/dab/config/ofdm.fifo
+sudo mkfifo /home/$USER/dab/config/ofdm.fifo
 
 if [ ! -d "/home/$USER/dab/ODR-AudioEnc" ];then
 echo -e "$GREEN Compiling ODR-AudioEnc $NORMAL"

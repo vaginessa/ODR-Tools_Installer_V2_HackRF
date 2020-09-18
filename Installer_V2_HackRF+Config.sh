@@ -183,6 +183,7 @@ sudo apt-get -y install python3 python3-pip chromium chromium-driver
 sudo pip3 install selenium
 sudo pip3 install imgkit
 sudo pip3 install pillow
+sudo pip3 install coverpy
 
 # this will install boost, cmake and a lot more
 sudo apt-get -y build-dep uhd
